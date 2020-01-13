@@ -1,7 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import { Container, Navbar, Nav } from 'react-bootstrap'
 import './App.css';
+import Footer from './components/Footer'
 
 class App extends React.Component {
   constructor(props){
@@ -54,6 +55,7 @@ class App extends React.Component {
             </Navbar.Collapse>
 
           </Navbar>
+          <Footer></Footer>
         </Container>
       </Router>
 
