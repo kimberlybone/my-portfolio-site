@@ -1,6 +1,6 @@
 import React from 'react';
 
-function WelcomePage(){
+function WelcomePage( props ){
   return(
     <p>Welcome</p>
   )

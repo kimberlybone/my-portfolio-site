@@ -1,6 +1,6 @@
 import React from 'react';
 
-function WhatIDoPage(){
+function WhatIDoPage( props ){
   return(
     <p> What I Do </p>
   )

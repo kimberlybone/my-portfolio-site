@@ -4,6 +4,9 @@ import { Container, Navbar, Nav } from 'react-bootstrap'
 import './App.css';
 import Footer from './ChildComponents/Footer'
 import WelcomePage from './MainComponents/WelcomePage'
+import WhatIDoPage from './MainComponents/WhatIDoPage'
+import WhoIAmPage from './MainComponents/WhoIAmPage'
+import ContactPage from './MainComponents/ContactPage'
 
 class App extends React.Component {
   constructor(props){
@@ -59,6 +62,9 @@ class App extends React.Component {
           </Navbar>
 
           <Route path="/" exact render={ () => <WelcomePage title={ welcome.title } subtitle={ welcome.subTitle  }/> }/>
+          <Route path="/what" exact render={ () => <WhatIDoPage title={ what.title } subtitle={ what.subTitle  }/> }/>
+          <Route path="/who" exact render={ () => <WhoIAmPage title={ who.title } subtitle={ who.subTitle  }/> }/>
+          <Route path="/contact" exact render={ () => <ContactPage title={ contact.title } subtitle={ contact.subTitle  }/> }/>
 
           <Footer></Footer>
 

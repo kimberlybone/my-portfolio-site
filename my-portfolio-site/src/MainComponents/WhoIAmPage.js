@@ -1,6 +1,6 @@
 import React from 'react';
 
-function WhoIAmPage(){
+function WhoIAmPage( props ){
   return(
     <p>Who I Am </p>
   )
