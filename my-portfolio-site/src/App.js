@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Container, Navbar, Nav } from 'react-bootstrap'
 import './App.css';
 
 class App extends React.Component {
@@ -35,7 +36,19 @@ class App extends React.Component {
   render() {
     return(
       <Router>
-        <Route>Welcome</Route>
+        <Container className='p-0' fluid={ true }>
+          <Navbar className='border-bottom'>
+            <Navbar.Brand> Kimberly Bone </Navbar.Brand>
+            <Navbar.Toggle aria-controls='navbar-toggle'></Navbar.Toggle>
+            <Navbar.Collapse id='navbar-collapse'></Navbar.Collapse>
+            <Nav>
+              <Link className='nav-link' to='/' > Welcome </Link>
+              <Link className='nav-link' to='/what' > What I do </Link>
+              <Link className='nav-link' to='/who' > Who I am </Link>
+              <Link className='nav-link' to='/contact' > Contact Me </Link>
+            </Nav>
+          </Navbar>
+        </Container>
       </Router>
 
     )
