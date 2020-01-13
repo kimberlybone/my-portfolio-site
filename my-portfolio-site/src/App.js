@@ -36,17 +36,23 @@ class App extends React.Component {
   render() {
     return(
       <Router>
-        <Container className='p-0' fluid={ true }>
-          <Navbar className='border-bottom'>
+        <Container className="p-0" fluid={ true }>
+          <Navbar className="border-bottom" bg="transparent" expand="lg">
+
             <Navbar.Brand> Kimberly Bone </Navbar.Brand>
-            <Navbar.Toggle aria-controls='navbar-toggle'></Navbar.Toggle>
-            <Navbar.Collapse id='navbar-collapse'></Navbar.Collapse>
-            <Nav>
-              <Link className='nav-link' to='/' > Welcome </Link>
-              <Link className='nav-link' to='/what' > What I do </Link>
-              <Link className='nav-link' to='/who' > Who I am </Link>
-              <Link className='nav-link' to='/contact' > Contact Me </Link>
-            </Nav>
+            <Navbar.Toggle className="border-0" aria-controls="navbar-toggle"/>
+
+            <Navbar.Collapse id="navbar-toggle">
+
+              <Nav className='ml-auto'>
+                <Link className="nav-link" to="/" > Welcome </Link>
+                <Link className="nav-link" to="/what" > What I do </Link>
+                <Link className="nav-link" to="/who" > Who I am </Link>
+                <Link className="nav-link" to="/contact" > Contact Me </Link>
+              </Nav>
+
+            </Navbar.Collapse>
+
           </Navbar>
         </Container>
       </Router>
