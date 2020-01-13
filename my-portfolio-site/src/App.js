@@ -1,8 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Container, Navbar, Nav } from 'react-bootstrap'
 import './App.css';
-import Footer from './components/Footer'
+import Footer from './ChildComponents/Footer'
+import WelcomePage from './MainComponents/WelcomePage'
 
 class App extends React.Component {
   constructor(props){
@@ -35,6 +36,7 @@ class App extends React.Component {
   }
 
   render() {
+    const { headerLinks, welcome, what, who, contact } = this.state
     return(
       <Router>
         <Container className="p-0" fluid={ true }>
@@ -55,7 +57,11 @@ class App extends React.Component {
             </Navbar.Collapse>
 
           </Navbar>
+
+          <Route path="/" exact render={ () => <WelcomePage title={ welcome.title } subtitle={ welcome.subtitle }/> }/>
+
           <Footer></Footer>
+
         </Container>
       </Router>
 
