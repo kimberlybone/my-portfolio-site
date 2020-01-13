@@ -58,7 +58,7 @@ class App extends React.Component {
 
           </Navbar>
 
-          <Route path="/" exact render={ () => <WelcomePage title={ welcome.title } subtitle={ welcome.subtitle }/> }/>
+          <Route path="/" exact render={ () => <WelcomePage title={ welcome.title } subtitle={ welcome.subTitle  }/> }/>
 
           <Footer></Footer>
 
