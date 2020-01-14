@@ -1,8 +1,11 @@
 import React from 'react';
 
-function ContactPage(){
+function ContactPage( props ){
   return(
-    <p>Contact Page</p>
+    <div>
+      <p>{ props.title }</p>
+      <p>{ props.subtitle }</p>
+    </div>
   )
 }
 export default ContactPage

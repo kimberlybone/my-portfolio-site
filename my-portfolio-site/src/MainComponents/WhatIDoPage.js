@@ -2,7 +2,10 @@ import React from 'react';
 
 function WhatIDoPage( props ){
   return(
-    <p> What I Do </p>
+    <div>
+      <p>{ props.title }</p>
+      <p>{ props.subtitle }</p>
+    </div>
   )
 }
 export default WhatIDoPage
