@@ -6,8 +6,8 @@ function Card ( props ){
   const { item } = props
 
     return(
-      <div>
-        <img className="" src={ item.imgSrc } alt="image"/>
+      <div className="k-card">
+        <img className="k-card-image" src={ item.imgSrc } alt="image"/>
         { item.selected && <CardInfo title={ item.title } subTitle={ item.subTitle } link={ item.link }/>  }
       </div>
     )

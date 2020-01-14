@@ -6,7 +6,7 @@ function CardInfo( props ){
 
   const style = useSpring({ opacity: 1, from: { opacity: 0 } })
     return(
-      <animated.div className="" style= { style }>
+      <animated.div className="k-card-info" style= { style }>
         <p>{ props.title }</p>
         <p>{ props.subTitle }</p>
         <Link>{ props.link }</Link>
