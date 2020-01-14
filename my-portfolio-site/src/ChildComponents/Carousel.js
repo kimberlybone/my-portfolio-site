@@ -38,7 +38,8 @@ class Carousel extends React.Component {
   }
 
   handleCardClick = ( id ) => {
-    let { items } = [...this.state.items]
+    let items = [...this.state.items]
+    console.log(items)
 
     items[id].selected = items[id].selected ?  false : true
     items.forEach( item => {
@@ -57,7 +58,6 @@ class Carousel extends React.Component {
 
 
   render(){
-    console.log(this.state)
     const { items } = this.state
 
     return(
