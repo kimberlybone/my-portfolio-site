@@ -1,10 +1,10 @@
 import React from 'react';
+import Hero from '../ChildComponents/Hero'
 
 function WelcomePage( props ){
   return(
     <div>
-      <p>{ props.title }</p>
-      <p>{ props.subtitle }</p>
+      <Hero title={ props.title } subTitle={ props.subTitle } subText={ props.subText }></Hero>
     </div>
   )
 }

@@ -27,11 +27,11 @@ class App extends React.Component {
       },
       what: {
         title: "What I Do",
-        subTitle: "A little bit about me...",
+        subTitle: "Projects and more...",
         subText: "Checkout my projects"
       },
       who: {
-        title: "Who I am"
+        title: "Who Am I?"
       },
       contact: {
         title: "Let's Connect"
@@ -62,10 +62,10 @@ class App extends React.Component {
 
           </Navbar>
 
-          <Route path="/" exact render={ () => <WelcomePage title={ welcome.title } subtitle={ welcome.subTitle  }/> }/>
-          <Route path="/what" exact render={ () => <WhatIDoPage title={ what.title } subtitle={ what.subTitle  }/> }/>
-          <Route path="/who" exact render={ () => <WhoIAmPage title={ who.title } subtitle={ who.subTitle  }/> }/>
-          <Route path="/contact" exact render={ () => <ContactPage title={ contact.title } subtitle={ contact.subTitle  }/> }/>
+          <Route path="/" exact render={ () => <WelcomePage title={ welcome.title } subTitle={ welcome.subTitle } subText={ welcome.subText }/> }/>
+          <Route path="/what" exact render={ () => <WhatIDoPage title={ what.title } subTitle={ what.subTitle }/> }/>
+          <Route path="/who" exact render={ () => <WhoIAmPage title={ who.title } /> }/>
+          <Route path="/contact" exact render={ () => <ContactPage title={ contact.title } /> }/>
 
           <Footer></Footer>
 
