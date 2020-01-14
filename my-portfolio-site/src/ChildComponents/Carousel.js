@@ -1,5 +1,6 @@
 import React from 'react';
-import Card from './ChildComponents/Card'
+import Card from '../ChildComponents/Card'
+import { Container, Row } from 'react-bootstrap'
 
 class Carousel extends React.Component {
 
@@ -9,17 +10,17 @@ class Carousel extends React.Component {
       items: [
         {
           id: 0,
-          title: "",
+          title: "MoodFood",
           subTitle: "",
-          imgSrc: "",
+          imgSrc: "https://www.diabetes.org/sites/default/files/styles/crop_large/public/2019-06/Healthy%20Food%20Made%20Easy%20-min.jpg",
           link: "",
           selected: false
         },
         {
           id: 1,
-          title: "",
+          title: "Happy Hour",
           subTitle: "",
-          imgSrc: "",
+          imgSrc: "https://www.bestwesternva.com/wp-content/uploads/sites/67/2019/02/happy-hour-sign.jpg",
           link: "",
           selected: false
         },
@@ -27,7 +28,7 @@ class Carousel extends React.Component {
           id: 2,
           title: "",
           subTitle: "",
-          imgSrc: "",
+          imgSrc: "https://revcycleintelligence.com/images/site/article_headers/_normal/2017-12-12-patient-care.png",
           link: "",
           selected: false
         }
@@ -38,7 +39,7 @@ class Carousel extends React.Component {
 
   handleCardClick = ( id ) => {
     let { items } = [...this.state.items]
-    
+
     items[id].selected = items[id].selected ?  false : true
     items.forEach( item => {
       if( item.id !== id ){
@@ -50,16 +51,23 @@ class Carousel extends React.Component {
 
   makeItems = ( items ) => {
     return items.map( item => {
-      return <Card item={ item } onClick={ this.handleCardClick }/>
+      return <Card item={ item } onClick={( e => this.handleCardClick(item.id, e) )} key={ item.id }/>
     })
   }
 
+
   render(){
+
+    const { items } = this.state
+
     return(
-      <div>
-      Carousel
-      </div>
+      <Container fluid={ true }>
+        <Row className="justify-content-around">
+        { this.makeItems(items) }
+        </Row>
+      </Container>
     )
+
   }
 }
 export default Carousel
