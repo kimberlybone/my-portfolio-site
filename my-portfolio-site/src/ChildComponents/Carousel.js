@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from './ChildComponents/Card'
 
 class Carousel extends React.Component {
 
@@ -35,8 +36,9 @@ class Carousel extends React.Component {
     }
   }
 
-  handleCardClick = ( id, card ) => {
+  handleCardClick = ( id ) => {
     let { items } = [...this.state.items]
+    
     items[id].selected = items[id].selected ?  false : true
     items.forEach( item => {
       if( item.id !== id ){
@@ -44,6 +46,12 @@ class Carousel extends React.Component {
       }
     })
     this.setState({ items })
+  }
+
+  makeItems = ( items ) => {
+    return items.map( item => {
+      return <Card item={ item } onClick={ this.handleCardClick }/>
+    })
   }
 
   render(){
