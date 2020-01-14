@@ -13,7 +13,7 @@ class Carousel extends React.Component {
           title: "MoodFood",
           subTitle: "",
           imgSrc: "https://www.diabetes.org/sites/default/files/styles/crop_large/public/2019-06/Healthy%20Food%20Made%20Easy%20-min.jpg",
-          link: "",
+          link: "https://github.com/kimberlybone/moodfood-frontend",
           selected: false
         },
         {
@@ -21,15 +21,15 @@ class Carousel extends React.Component {
           title: "Happy Hour",
           subTitle: "",
           imgSrc: "https://www.bestwesternva.com/wp-content/uploads/sites/67/2019/02/happy-hour-sign.jpg",
-          link: "",
+          link: "https://github.com/kimberlybone/happy-hour-frontend",
           selected: false
         },
         {
           id: 2,
-          title: "",
+          title: "Health On the Go",
           subTitle: "",
           imgSrc: "https://revcycleintelligence.com/images/site/article_headers/_normal/2017-12-12-patient-care.png",
-          link: "",
+          link: "https://github.com/kimberlybone/Health-on-the-go",
           selected: false
         }
       ]
@@ -57,7 +57,7 @@ class Carousel extends React.Component {
 
 
   render(){
-
+    console.log(this.state)
     const { items } = this.state
 
     return(
