@@ -52,20 +52,20 @@ class App extends React.Component {
             <Navbar.Collapse id="navbar-toggle">
 
               <Nav className='ml-auto'>
-                <Link className="nav-link" to="/" > Welcome </Link>
-                <Link className="nav-link" to="/what" > What I do </Link>
-                <Link className="nav-link" to="/who" > Who I am </Link>
-                <Link className="nav-link" to="/contact" > Contact Me </Link>
+                <Link className="nav-link" to="/my-portfolio-site" > Welcome </Link>
+                <Link className="nav-link" to="/my-portfolio-site/what" > What I do </Link>
+                <Link className="nav-link" to="/my-portfolio-site/who" > Who I am </Link>
+                <Link className="nav-link" to="/my-portfolio-site/contact" > Contact Me </Link>
               </Nav>
 
             </Navbar.Collapse>
 
           </Navbar>
 
-          <Route path="/" exact render={ () => <WelcomePage title={ welcome.title } subTitle={ welcome.subTitle } subText={ welcome.subText }/> }/>
-          <Route path="/what" exact render={ () => <WhatIDoPage title={ what.title } subTitle={ what.subTitle }/> }/>
-          <Route path="/who" exact render={ () => <WhoIAmPage title={ who.title } /> }/>
-          <Route path="/contact" exact render={ () => <ContactPage title={ contact.title } /> }/>
+          <Route path="/my-portfolio-site" exact render={ () => <WelcomePage title={ welcome.title } subTitle={ welcome.subTitle } subText={ welcome.subText }/> }/>
+          <Route path="/my-portfolio-site/what" exact render={ () => <WhatIDoPage title={ what.title } subTitle={ what.subTitle }/> }/>
+          <Route path="/my-portfolio-site/who" exact render={ () => <WhoIAmPage title={ who.title } /> }/>
+          <Route path="/my-portfolio-site/contact" exact render={ () => <ContactPage title={ contact.title } /> }/>
 
           <Footer></Footer>
 
