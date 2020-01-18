@@ -18,9 +18,31 @@ app.use( (req, res, next) => {
   next()
 })
 // Defining the routes
-app.get( '/api', ( req, res )=> {
+app.get( '/api', ( req, res, next )=> {
   // send is a way to send texts
   res.send('API Status: Running')
 })
-// app.post()
+
+app.post('/api/email', (req, res, next ) => {
+  sendGrid(setApiKey('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'))
+  const msg = {
+    to: 'bone.kimberlyd@gmail.com',
+    from: req.body.email,
+    subject: 'Website Contact',
+    text: req.body.message
+  }
+  sendGrid.send( msg )
+    .then( result => {
+      res.status( 200 ).json({
+        sucess: true
+      })
+    })
+    .catch( err => {
+      console.log( 'error:', err )
+      res.status( 401  ).json({
+        sucess: false
+      })
+    })
+})
+
 app.listen(3030, '0.0.0.0')
