@@ -29,8 +29,7 @@ class MyForm extends React.Component {
 
     this.setState({
       disabled: true,
-      emailSent: true,
-      newMessage
+      emailSent: false,
     })
   }
 

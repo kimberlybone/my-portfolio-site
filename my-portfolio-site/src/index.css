@@ -47,12 +47,12 @@ code {
   margin: 0px;
 }
 
-.succes-msg {
-  color: #57A773;
+.success-msg {
+  font-color: green;
   padding: 10px 15px;
 }
 
 .err-msg {
-  color: #EE6352;
+  font-color: red;
   padding: 10px 15px;
 }
