@@ -28,8 +28,27 @@ class MyForm extends React.Component {
     console.log(newMessage);
 
     this.setState({
-      disabled: true,
-      emailSent: false,
+      disabled: true
+    })
+    Axios.post('/api/email', this.state)
+      if( res.data.success ){
+        .then(res => {
+          this.setState({
+            disabled: false,
+            emailSent: true
+          })
+        })
+      } else {
+        this.setState({
+          disabled: false,
+          emailSent: false
+        })
+      } 
+      .catch(err => {
+        this.setState({
+          disabled: false,
+          emailSent: false
+        })
     })
   }
 
