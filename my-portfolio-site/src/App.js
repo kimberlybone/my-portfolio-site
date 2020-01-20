@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Container, Navbar, Nav } from 'react-bootstrap'
 import './App.css';
-// import axios from "axios"
 
 import Footer from './ChildComponents/Footer'
 import WelcomePage from './MainComponents/WelcomePage'
