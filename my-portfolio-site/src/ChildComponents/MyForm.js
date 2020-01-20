@@ -1,10 +1,11 @@
 import React from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
 import { Form } from 'react-bootstrap'
+import Axios from 'axios'
 
 class MyForm extends React.Component {
   constructor( props ){
-    super(props)
+    super( props )
     this.state = {
       name: "",
       email: "",
@@ -31,8 +32,8 @@ class MyForm extends React.Component {
       disabled: true
     })
 
-    Axios.post('/api/email', this.state)
-        .then(res => {
+    Axios.post( 'http://localhost:3030/api/email', this.state )
+        .then( res => {
           if( res.data.success ){
           this.setState({
             disabled: false,
@@ -44,8 +45,9 @@ class MyForm extends React.Component {
             emailSent: false
           })
         }
+        debugger
       })
-      .catch(err => {
+      .catch( err => {
         this.setState({
           disabled: false,
           emailSent: false
@@ -56,7 +58,7 @@ class MyForm extends React.Component {
   render(){
 
     return(
-      <Form onSubmit={this.handleSubmit}>
+      <Form onSubmit={ this.handleSubmit }>
         <Form.Group>
           <Form.Label htmlFor="full-name">Full Name</Form.Label>
           <Form.Control id="full-name"
