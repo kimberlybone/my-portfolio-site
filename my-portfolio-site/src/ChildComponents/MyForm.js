@@ -17,7 +17,6 @@ class MyForm extends React.Component {
 
   handleChange = e => {
     const inputName = e.target.name
-    // const value = e.target.value
     const value = e.target.type === 'checkbox' ? e.target.checked : e.target.value
 
     this.setState({ [inputName]: value })
@@ -25,8 +24,6 @@ class MyForm extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault()
-    // const newMessage = this.state
-    // console.log(newMessage);
 
     this.setState({
       disabled: true
@@ -45,7 +42,6 @@ class MyForm extends React.Component {
             emailSent: false
           })
         }
-        debugger
       })
       .catch( err => {
         this.setState({

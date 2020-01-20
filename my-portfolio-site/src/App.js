@@ -27,7 +27,7 @@ class App extends React.Component {
       },
       what: {
         title: "What I Do",
-        subTitle: "Projects and more...",
+        subTitle: "Hobbies, skills, and more...",
         subText: "Checkout my projects"
       },
       who: {
