@@ -6,7 +6,7 @@ import { useSpring, animated } from 'react-spring'
 function Hero( props ){
   const [ isToggled, setToggle ] = useState(false)
   const fade = useSpring({ from: { opacity: 0 }, opacity: 1 })
-  const enlarge = useSpring({ fontSize: isToggled ? '2rem' : '20em' })
+  const enlarge = useSpring({ fontSize: isToggled ? '10em' : '7rem' })
   return(
     <Jumbotron className="bg-transparent jumbotron-fluid p-0">
       <Container fluid={ true }>
