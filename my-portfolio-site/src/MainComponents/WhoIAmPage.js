@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from '../ChildComponents/Hero'
 import Content from '../ChildComponents/Content'
 import { useSpring, animated } from 'react-spring'
-// import { Spring } from 'react-spring'
+import { Spring } from 'react-spring/renderprops'
 
 
 
