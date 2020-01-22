@@ -42,7 +42,7 @@ class MyForm extends React.Component {
             emailSent: false
           })
         }
-      })
+      }) 
       .catch( err => {
         this.setState({
           disabled: false,
