@@ -3,7 +3,7 @@ import Hero from '../ChildComponents/Hero'
 import Content from '../ChildComponents/Content'
 import MyBasicInfo from '../ChildComponents/MyBasicInfo'
 import OtherInfo from '../ChildComponents/OtherInfo'
-import { Contianer } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import { useSpring, animated } from 'react-spring'
 import { Spring } from 'react-spring/renderprops'
 
@@ -29,7 +29,7 @@ function WhoIAmPage( props ){
   return(
     <div>
       <Hero title={ props.title } subTitle={ props.subTitle } subText={ props.subText }></Hero>
-      <Container>
+      <Container >
             <div>
               <MyBasicInfo></MyBasicInfo>
               <OtherInfo></OtherInfo>

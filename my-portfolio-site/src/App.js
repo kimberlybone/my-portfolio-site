@@ -22,7 +22,7 @@ class App extends React.Component {
       ],
       welcome: {
         title: "Welcome",
-        subTitle: "A little bit about me...",
+        subTitle: "I am a web developer who loves design, traveling, and best of all coffee",
         subText: "Checkout my projects"
       },
       what: {
@@ -43,8 +43,8 @@ class App extends React.Component {
     const { headerLinks, welcome, what, who, contact } = this.state
     return(
       <Router>
-        <Container className="p-0" fluid={ true }>
-          <Navbar className="border-bottom" bg="transparent" expand="lg">
+        <Container className="p-0" fluid={ true } >
+          <Navbar className="border-bottom" variant="light" expand="lg">
 
             <Navbar.Brand> Kimberly Bone </Navbar.Brand>
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle"/>

@@ -19,7 +19,7 @@ function Hero( props ){
       <Container fluid={ true }>
         <animated.div style={ fade }>
           <Row className="justify-content-center py-5">
-            <Col md={ 5 } sm={ 5 }>
+            <Col md={ 10 } sm={ 10 }>
               {
                 transitions.map( ({ item, props, key }) => <animated.div key={key} style={props}>{item.text}</animated.div>)
               }
