@@ -14,6 +14,14 @@ function WhatIDoPage( props ){
         <p><a href="https://medium.com/swlh/object-orientation-in-javascript-ad25e9e469b7?source=friends_link&sk=ffabe8fdbdc3d86d18dd64945822668b">Object-Orientation in JavaScript</a></p>
         <p><a href="https://medium.com/swlh/a-glance-at-hooks-aa06027b6b9e?source=friends_link&sk=54260298a91a94b03bd6eff2ae3d4ade">React Hooks</a></p>
         <p><a href="https://medium.com/@k_bone/installing-and-understanding-sass-f2cdc15f278a?source=friends_link&sk=5bd02b148f59fc8987928ed117c95deb">Installing and Understanding SASS</a></p>
+        <h3>Tools & Skills</h3>
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>ReactJS</p>
+        <p>JavaScript</p>
+        <p>Ruby on Rails</p>
+        <p>IBM Watson Knowledge Studio & Natural Language Proceessing</p>
+        <p>ReactJS</p>
       </Container>
     </div>
   )
