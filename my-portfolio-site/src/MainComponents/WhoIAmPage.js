@@ -29,13 +29,13 @@ function WhoIAmPage( props ){
   return(
     <div>
       <Hero title={ props.title } subTitle={ props.subTitle } subText={ props.subText }></Hero>
-      <Container >
+      <Content>
             <div>
               <MyBasicInfo></MyBasicInfo>
               <OtherInfo></OtherInfo>
               <p> *Take a look at my resume! <a href="public/SoftwareResume.pdf" download > Download Kimberly's Resume </a></p>
             </div>
-      </Container>
+      </Content>
     </div>
   )
 }
