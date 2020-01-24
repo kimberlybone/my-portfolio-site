@@ -4,9 +4,10 @@ import { Spring } from 'react-spring/renderprops'
 function MyBasicInfo( ){
 
   const infoStyle = {
-    background: 'red',
+    background: '#ffccff',
     color: 'white',
-    padding: '1.5rem'
+    padding: '1.5rem',
+    textShadow: '2px 2px 4px #000000'
   }
 
   return(

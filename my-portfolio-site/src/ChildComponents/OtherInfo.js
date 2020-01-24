@@ -6,15 +6,16 @@ class OtherInfo extends React.Component {
   render() {
 
     const otherInfoStyle = {
-      background: 'lightblue',
+      background: '#ffccff',
       color: 'white',
-      padding: '1.5rem'
+      padding: '1.5rem',
+      textShadow: '2px 2px 4px #000000'
     }
 
     return (
       <Spring
-        from={{ opacity: 0, marginRight: -500 }}
-        to={{ opacity: 1, marginRight: 0 }}
+        from={{ opacity: 0, marginRight: -500, marginTop: 20 }}
+        to={{ opacity: 1, marginRight: 0, marginTop: 20 }}
         config={{ delay: 1500, duration: 1000 }}
       >
         { props => (
