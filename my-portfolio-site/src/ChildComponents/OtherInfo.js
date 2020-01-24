@@ -13,8 +13,8 @@ class OtherInfo extends React.Component {
 
     return (
       <Spring
-        from={{ opacity: 0 }}
-        to={{ opacity: 1 }}
+        from={{ opacity: 0, marginRight: -500 }}
+        to={{ opacity: 1, marginRight: 0 }}
         config={{ delay: 1500, duration: 1000 }}
       >
         { props => (
