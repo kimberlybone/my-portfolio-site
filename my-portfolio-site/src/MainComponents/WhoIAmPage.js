@@ -10,11 +10,6 @@ import { Spring } from 'react-spring/renderprops'
 
 
 function WhoIAmPage( props ){
-  const nameStyle = {
-     background: 'red',
-     color: 'white',
-     padding: '1.5rem'
-  }
   // const fade = useSpring({ from: { opacity: 0, marginTop: -500 }, opacity: 1, marginTop: 0 })
   // const fade2 = useSpring({
   //   from: { opacity: 0, marginTop: -500 },

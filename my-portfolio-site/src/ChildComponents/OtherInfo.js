@@ -6,10 +6,10 @@ class OtherInfo extends React.Component {
   render() {
 
     const otherInfoStyle = {
-      background: '#ffccff',
-      color: 'white',
+      background: '#ffe6ff',
+      color: 'black',
       padding: '1.5rem',
-      textShadow: '2px 2px 4px #000000'
+      textShadow: '0px 1px 0px #00000'
     }
 
     return (
