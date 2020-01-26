@@ -9,7 +9,7 @@ class OtherInfo extends React.Component {
       background: '#ffe6ff',
       color: 'black',
       padding: '1.5rem',
-      textShadow: '0px 1px 0px #00000'
+      textShadow: '0px 0px 0px #00000'
     }
 
     return (

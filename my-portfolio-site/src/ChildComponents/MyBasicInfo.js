@@ -7,7 +7,7 @@ function MyBasicInfo( ){
     background: '#ffe6ff',
     color: 'black',
     padding: '1.5rem',
-    textShadow: '0px 1px 0px #000000'
+    textShadow: '0px 0px 0px #000000'
   }
 
   return(
