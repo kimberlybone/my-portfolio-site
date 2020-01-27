@@ -6,13 +6,19 @@ import OtherInfo from '../ChildComponents/OtherInfo'
 import { Container } from 'react-bootstrap'
 import { useSpring, animated } from 'react-spring'
 import { Spring } from 'react-spring/renderprops'
+import { TweenMax } from 'gsap'
 
 
 
 function WhoIAmPage( props ){
-  
+
+  let page = useRef( null )
+
+  useEffect(() => {
+    TweenMax.to( elem, 0, { css })
+  })
   return(
-    <div>
+    <div ref={ elem => page = elem }>
       <Hero title={ props.title } subTitle={ props.subTitle } subText={ props.subText }></Hero>
       <Content>
             <div>
