@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import Hero from '../ChildComponents/Hero'
 import { Container } from 'react-bootstrap'
 import { TweenMax, Power3 } from 'gsap'
 
 
 function WhatIDoPage( props ){
+
+  let media = useRef(null)
+
   return(
     <div>
       <Hero title={ props.title } subTitle={ props.subTitle } subText={ props.subText }></Hero>
       <Container>
-        <h3>Media</h3>
+        <h3 ref={ e => { media = e } }>Media</h3>
         <p><a href="https://medium.com/datadriveninvestor/nutrition-meets-artificial-intelligence-b15847d6cc19?source=friends_link&sk=4f62c29ebede52b76b42547149f0ccc4">Nutrition Meets Artificial Intelligence Part 1</a></p>
         <p><a href="https://medium.com/@k_bone/nutrition-meets-artificial-intelligence-part-ii-b45f4a000db6?source=friends_link&sk=797b3b6ef097babe8dc31dd4b6897039">Nutrition Meets Artificial Intelligence Part 2</a></p>
         <p><a href="https://medium.com/swlh/object-orientation-in-javascript-ad25e9e469b7?source=friends_link&sk=ffabe8fdbdc3d86d18dd64945822668b">Object-Orientation in JavaScript</a></p>
