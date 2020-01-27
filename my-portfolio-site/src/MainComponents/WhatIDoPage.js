@@ -18,7 +18,8 @@ function WhatIDoPage( props ){
       {
         opacity: 1,
         y: -20,
-        ease: Power3.easeOut
+        ease: Power3.easeOut,
+        delay: 0.2
       }
     )
   })
