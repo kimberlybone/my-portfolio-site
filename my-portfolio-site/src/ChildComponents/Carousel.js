@@ -4,9 +4,7 @@ import { Container, Row } from 'react-bootstrap'
 
 class Carousel extends React.Component {
 
-  constructor( props ){
-    super( props )
-    this.state = {
+    state = {
       items: [
         {
           id: 0,
@@ -35,7 +33,6 @@ class Carousel extends React.Component {
       ]
 
     }
-  }
 
   handleCardClick = ( id ) => {
     let items = [...this.state.items]

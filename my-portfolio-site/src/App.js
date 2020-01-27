@@ -10,9 +10,8 @@ import WhoIAmPage from './MainComponents/WhoIAmPage'
 import ContactPage from './MainComponents/ContactPage'
 
 class App extends React.Component {
-  constructor(props){
-    super(props)
-    this.state = {
+
+    state = {
       title: "Kimberly Bone",
       headerLinks: [
         { title: "Welcome", path: "/" },
@@ -37,7 +36,6 @@ class App extends React.Component {
         title: "Let's Connect"
       }
     }
-  }
 
   render() {
     const { headerLinks, welcome, what, who, contact } = this.state

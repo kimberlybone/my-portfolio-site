@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import Hero from '../ChildComponents/Hero'
 import Content from '../ChildComponents/Content'
 import MyBasicInfo from '../ChildComponents/MyBasicInfo'
@@ -10,17 +10,7 @@ import { Spring } from 'react-spring/renderprops'
 
 
 function WhoIAmPage( props ){
-  // const fade = useSpring({ from: { opacity: 0, marginTop: -500 }, opacity: 1, marginTop: 0 })
-  // const fade2 = useSpring({
-  //   from: { opacity: 0, marginTop: -500 },
-  //   to: { opacity: 1 },
-  //   marginTop: 0,
-  //   config: { delay: 1000, duration: 1000 } })
-  // const fade3 = useSpring({
-  //   from: { opacity: 0, marginTop: -500 },
-  //   to: { opacity: 1 },
-  //   marginTop: 0,
-  //   config: { delay: 2000, duration: 2000 } })
+  
   return(
     <div>
       <Hero title={ props.title } subTitle={ props.subTitle } subText={ props.subText }></Hero>
