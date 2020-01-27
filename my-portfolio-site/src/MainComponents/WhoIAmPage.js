@@ -15,7 +15,7 @@ function WhoIAmPage( props ){
   let page = useRef( null )
 
   useEffect(() => {
-    TweenMax.to( elem, 0, { css })
+    TweenMax.to( page, 0, { css: { visibility: 'visible' } })
   })
   return(
     <div ref={ elem => page = elem }>
