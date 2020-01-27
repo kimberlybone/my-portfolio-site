@@ -8,7 +8,8 @@ import { TweenMax, Power3 } from 'gsap'
 
 function WhatIDoPage( props ){
 
-  let whatIDo = useRef(null)
+  let whatIDo = useRef( null )
+
   useEffect(() => {
     console.log(whatIDo);
     TweenMax.to(
@@ -22,8 +23,14 @@ function WhatIDoPage( props ){
     )
   })
 
+  let page = useRef( null )
+
+  useEffect(() => {
+    TweenMax.to( page, 0, { css: { visibility: 'visible' } })
+  })
+
   return(
-    <div>
+    <div ref={ elem => page = elem }>
       <Hero title={ props.title } subTitle={ props.subTitle } subText={ props.subText }></Hero>
       <Container className='h3-what' ref={ e => { whatIDo = e } }>
         <MyMedia></MyMedia>
