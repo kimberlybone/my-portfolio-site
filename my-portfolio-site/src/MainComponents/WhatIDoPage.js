@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from '../ChildComponents/Hero'
 import { Container } from 'react-bootstrap'
+import { TweenMax, Power3 } from 'gsap'
 
 
 function WhatIDoPage( props ){
