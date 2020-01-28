@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap'
 import { TweenMax, Power3 } from 'gsap'
 
 
-function WhatIDoPage( props ){
+function MyMedia( props ){
 
   let myMedia = useRef(null)
   useEffect(() => {
@@ -14,7 +14,8 @@ function WhatIDoPage( props ){
       {
         opacity: 1,
         y: -20,
-        ease: Power3.easeOut
+        ease: Power3.easeOut,
+        delay: 0.3
       }
     )
   })
@@ -32,4 +33,4 @@ function WhatIDoPage( props ){
     </div>
   )
 }
-export default WhatIDoPage
+export default MyMedia

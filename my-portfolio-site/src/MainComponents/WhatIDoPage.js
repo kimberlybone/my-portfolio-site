@@ -11,17 +11,7 @@ function WhatIDoPage( props ){
   let whatIDo = useRef( null )
 
   useEffect(() => {
-    console.log(whatIDo);
-    TweenMax.to(
-      whatIDo,
-      0.8,
-      {
-        opacity: 1,
-        y: -20,
-        ease: Power3.easeOut,
-        delay: 0.2
-      }
-    )
+    TweenMax.to( whatIDo, 0.8, { opacity: 1 } )
   })
 
   let page = useRef( null )
@@ -33,7 +23,7 @@ function WhatIDoPage( props ){
   return(
     <div ref={ elem => page = elem }>
       <Hero title={ props.title } subTitle={ props.subTitle } subText={ props.subText }></Hero>
-      <Container className='h3-what' ref={ e => { whatIDo = e } }>
+      <Container className='h3-what' ref={ elem => { whatIDo = elem } }>
         <MyMedia></MyMedia>
         <MySkills></MySkills>
       </Container>
