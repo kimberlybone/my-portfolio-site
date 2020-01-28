@@ -2,7 +2,7 @@ import React from 'react'
 import { Spring } from 'react-spring/renderprops'
 
 
-class OtherInfo extends React.Component {
+class TextForWhat extends React.Component {
   render() {
 
     const otherInfoStyle = {
@@ -35,4 +35,4 @@ class OtherInfo extends React.Component {
   }
 }
 
-export default OtherInfo
+export default TextForWhat

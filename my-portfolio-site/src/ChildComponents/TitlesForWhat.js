@@ -1,7 +1,7 @@
 import React from 'react';
 import { Spring } from 'react-spring/renderprops'
 
-function MyBasicInfo( ){
+function TitlesForWhat( ){
 
   const infoStyle = {
     background: '#ffe6ff',
@@ -32,4 +32,4 @@ function MyBasicInfo( ){
     </Spring>
   )
 }
-export default MyBasicInfo
+export default TitlesForWhat

@@ -5,7 +5,8 @@ import { TweenMax, Power3 } from 'gsap'
 
 function MyMedia( props ){
 
-  let myMedia = useRef(null)
+  let myMedia = useRef( null )
+
   useEffect(() => {
     console.log(myMedia);
     TweenMax.to(

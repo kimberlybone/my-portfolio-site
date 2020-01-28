@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import Hero from '../ChildComponents/Hero'
 import Content from '../ChildComponents/Content'
-import MyBasicInfo from '../ChildComponents/MyBasicInfo'
-import OtherInfo from '../ChildComponents/OtherInfo'
+import TitlesForWhat from '../ChildComponents/TitlesForWhat'
+import TextForWhat from '../ChildComponents/TextForWhat'
 import { Container } from 'react-bootstrap'
 import { useSpring, animated } from 'react-spring'
 import { Spring } from 'react-spring/renderprops'
@@ -22,8 +22,8 @@ function WhoIAmPage( props ){
       <Hero title={ props.title } subTitle={ props.subTitle } subText={ props.subText }></Hero>
       <Content>
             <div>
-              <MyBasicInfo></MyBasicInfo>
-              <OtherInfo></OtherInfo>
+              <TitlesForWhat></TitlesForWhat>
+              <TextForWhat></TextForWhat>
               <p> *Take a look at my resume! <a href="public/SoftwareResume.pdf" download > Download Kimberly's Resume </a></p>
             </div>
       </Content>
