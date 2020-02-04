@@ -29,8 +29,10 @@ function MySkills( props ){
         <p>ReactJS</p>
         <p>JavaScript</p>
         <p>Ruby on Rails</p>
+        <p>Object Oriented Programming</p>
         <p>IBM Watson Knowledge Studio & Natural Language Proceessing</p>
         <p>React Hooks</p>
+        <p>Python</p>
       </Container>
     </div>
   )
