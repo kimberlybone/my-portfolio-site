@@ -1,26 +1,23 @@
 import React, { useRef, useEffect } from 'react';
 import { Container } from 'react-bootstrap'
-import { TweenMax, TimelineLite, Power3 } from 'gsap'
+import { TweenMax, Power3 } from 'gsap'
 
 
 function MySkills( props ){
 
   let mySkills = useRef(null)
-  let tl = new TimelineLite()
-  
   useEffect(() => {
     console.log(mySkills);
-    // TweenMax.to(
-    //   mySkills,
-    //   0.8,
-    //   {
-    //     opacity: 1,
-    //     y: -20,
-    //     ease: Power3.easeOut,
-    //     delay: 0.7
-    //   }
-    // )
-
+    TweenMax.to(
+      mySkills,
+      0.8,
+      {
+        opacity: 1,
+        y: -20,
+        ease: Power3.easeOut,
+        delay: 0.7
+      }
+    )
   })
 
   return(
