@@ -13,7 +13,7 @@ function Hero( props ){
   })
   const [ isToggled, setToggle ] = useState(false)
   const fade = useSpring({ opacity: 1, from: { opacity: 0 } })
-  const enlarge = useSpring({ fontSize: isToggled ? '10em' : '7rem' })
+  const colorChange = useSpring({ color: isToggled ? 'pink' : 'black' })
   return(
     <Jumbotron className="bg-transparent jumbotron-fluid p-0">
       <Container fluid={ true }>
@@ -24,8 +24,8 @@ function Hero( props ){
                 transitions.map( ({ item, props, key }) => <animated.div key={key} style={props}>{item.text}</animated.div>)
               }
               { props.title && <animated.h1 className="display-1 font-weight-bold"
-                                            style={ enlarge }
-                                            onMouseOver={ () => setToggle(!isToggled) }> { props.title } </animated.h1> }
+                                            style={ colorChange }
+                                            onMouseLeave={ () => setToggle(!isToggled) }> { props.title } </animated.h1> }
               { props.subTitle && <h3 className="display-4 font-weight-light"> { props.subTitle } </h3> }
               { props.subText && <h3 className="lead font-weight-light"> { props.subText } </h3> }
             </Col>
