@@ -19,11 +19,8 @@ function WhoIAmPage( props ){
     TweenMax.to( page, 0, { css: { visibility: 'visible' } })
   })
   return(
-    <div ref={ elem => page = elem }>
+    <div className="who-page" ref={ elem => page = elem }>
       <Hero title={ props.title } subTitle={ props.subTitle } subText={ props.subText }></Hero>
-      <div className="k-card-profile" onClick={( e => props.onClick(props.item) )}>
-        <img className="k-card-profile-img" src={ kim2 } alt="image"/>
-      </div>
       <Content>
             <div>
               <TitlesForWhat></TitlesForWhat>

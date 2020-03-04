@@ -43,8 +43,6 @@ code {
   transition: box-shadow 0.5s;
 }
 
-
-
 .k-card-info {
   margin-top: 10px;
   min-height: 100px;
@@ -69,4 +67,12 @@ code {
 .err-msg {
   font-color: red;
   padding: 10px 15px;
+}
+
+.who-page {
+  background-image: url('./Assets/kim7.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }

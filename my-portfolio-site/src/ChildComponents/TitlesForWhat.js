@@ -23,10 +23,13 @@ function TitlesForWhat(){
             <h4> Name: </h4>
               <p>  Kimberly Bone </p>
             <h4> Education: </h4>
-              <p>  - University of North Carolina at Greensboro c/o May 2019 </p>
-              <p>  - Flatiron School's coding bootcamp c/o November 2019.</p>
+              <li>  University of North Carolina at Greensboro (May 2019) </li>
+              <li>  Flatiron School's coding bootcamp (November 2019).</li>
             <h4> Hobbies: </h4>
-              <p>  Cooking, volunteering, photography, and inspiring other women of color </p>
+              <li>  Cooking </li>
+              <li>  Traveling </li>
+              <li>  Photography </li>
+              <li>  Inspiring other women of color </li>
           </div>
         </div>
       )}
