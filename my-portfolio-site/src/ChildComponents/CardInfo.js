@@ -8,7 +8,8 @@ function CardInfo( props ){
       <animated.div className="k-card-info" style= { style }>
         <p className="k-card-title">{ props.title }</p>
         <p className="k-card-sub-title">{ props.subTitle }</p>
-        <a href={ props.link } target="_blank" rel="noopener noreferrer">View this project</a>
+        <a href={ props.link } target="_blank" rel="noopener noreferrer">View this project on Github</a>
+        { props.demo && <p><a href={ props.demo } target="_blank" rel="noopener noreferrer">YouTube Demo</a></p> }
       </animated.div >
     )
 

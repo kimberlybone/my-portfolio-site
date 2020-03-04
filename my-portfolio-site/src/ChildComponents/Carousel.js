@@ -12,6 +12,7 @@ class Carousel extends React.Component {
           subTitle: "",
           imgSrc: "https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/301506_2200-800x1200.jpg",
           link: "https://github.com/kimberlybone/moodfood-frontend",
+          demo: "https://youtu.be/Nt9wXFrjiwA",
           selected: false
         },
         {
@@ -20,6 +21,7 @@ class Carousel extends React.Component {
           subTitle: "",
           imgSrc: "https://www.bestwesternva.com/wp-content/uploads/sites/67/2019/02/happy-hour-sign.jpg",
           link: "https://github.com/kimberlybone/happy-hour-frontend",
+          demo: "https://youtu.be/nJ420s7Z0cw",
           selected: false
         },
         {
