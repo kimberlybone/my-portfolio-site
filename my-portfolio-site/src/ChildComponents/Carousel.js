@@ -10,7 +10,7 @@ class Carousel extends React.Component {
           id: 0,
           title: "MoodFood",
           subTitle: "",
-          imgSrc: "https://www.diabetes.org/sites/default/files/styles/crop_large/public/2019-06/Healthy%20Food%20Made%20Easy%20-min.jpg",
+          imgSrc: "https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/301506_2200-800x1200.jpg",
           link: "https://github.com/kimberlybone/moodfood-frontend",
           selected: false
         },
@@ -26,7 +26,7 @@ class Carousel extends React.Component {
           id: 2,
           title: "Health On the Go",
           subTitle: "",
-          imgSrc: "https://revcycleintelligence.com/images/site/article_headers/_normal/2017-12-12-patient-care.png",
+          imgSrc: "https://www.freemanhealth.com/assets/images/heart-steth2.jpg",
           link: "https://github.com/kimberlybone/Health-on-the-go",
           selected: false
         }
