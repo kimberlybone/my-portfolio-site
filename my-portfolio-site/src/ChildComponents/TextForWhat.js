@@ -5,22 +5,27 @@ class TextForWhat extends React.Component {
   render() {
 
     const otherInfoStyle = {
-      background: '#ffe6ff',
-      color: 'black',
+      background: 'white',
+      color: '#f1c40f',
       padding: '1.5rem',
-      textShadow: '0px 0px 0px #00000'
+      textShadow: '0.5px 0.5px 1px #f1c40f',
+      marginBottom: '600px',
+      width: '100%',
+      height: '400px',
+      bottom: '-300px',
+      zIndex: '-1'
     }
 
     return (
       <Spring
         from={{ opacity: 0, marginRight: -500, marginTop: 20 }}
         to={{ opacity: 1, marginRight: 0, marginTop: 20 }}
-        config={{ delay: 1500, duration: 1000 }}
+        config={{ delay: 2500, duration: 1000 }}
       >
         { props => (
           <div style={ props }>
             <div style={ otherInfoStyle }>
-              <h4> Fun Facts: </h4>
+              <h3> Fun Facts: </h3>
               <li> I speak Spanish</li>
               <li> I studied and volunteered abroad in Costa Rica</li>
               <li> I'm always eager to learn new things </li>

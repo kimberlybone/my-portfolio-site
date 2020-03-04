@@ -13,11 +13,11 @@ function Hero( props ){
   })
   const [ isToggled, setToggle ] = useState(false)
   const fade = useSpring({ opacity: 1, from: { opacity: 0 } })
-  const colorChange = useSpring({ color: isToggled ? 'pink' : 'black' })
+  const colorChange = useSpring({ color: isToggled ? '#f1c40f' : '#f1c40f' })
   return(
     <Jumbotron className="bg-transparent jumbotron-fluid p-0">
       <Container fluid={ true }>
-        <animated.div style={ fade }>
+        <animated.div style={ fade } className='hero'>
           <Row className="justify-content-center py-5">
             <Col md={ 10 } sm={ 10 }>
               {

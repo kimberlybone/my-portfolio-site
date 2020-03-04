@@ -4,10 +4,16 @@ import { Spring } from 'react-spring/renderprops'
 function TitlesForWhat(){
 
   const infoStyle = {
-    background: '#ffe6ff',
-    color: 'black',
+    background: 'white',
+    color: '#f1c40f',
     padding: '1.5rem',
-    textShadow: '0px 0px 0px #000000'
+    textShadow: '0.5px 0.5px 1px #f1c40f',
+    marginTop: '400px',
+    marginBottom: '500px',
+    height: '600px',
+    minHeight: '600px',
+    position: 'relative',
+    zIndex: '1'
   }
 
   return(
@@ -20,12 +26,14 @@ function TitlesForWhat(){
       { props => (
         <div style={ props } >
           <div style={ infoStyle }>
-            <h4> Name: </h4>
+            <h2> <u> Name: </u>  </h2>
               <p>  Kimberly Bone </p>
-            <h4> Education: </h4>
-              <li>  University of North Carolina at Greensboro (May 2019) </li>
-              <li>  Flatiron School's coding bootcamp (November 2019).</li>
-            <h4> Hobbies: </h4>
+            <h2> <u> Education: </u>  </h2>
+              <p>
+                <li>  Flatiron School's coding bootcamp</li>
+                <li>  University of North Carolina at Greensboro</li>
+              </p>
+            <h2> <u> Hobbies: </u>  </h2>
               <li>  Cooking </li>
               <li>  Traveling </li>
               <li>  Photography </li>

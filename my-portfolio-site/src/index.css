@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+.hero {
+  font-family: 'Dancing Script', sans-serif;
+}
+
 .k-card {
   margin: 20px;
   /* transition: box-shadow 0.5s; */
@@ -75,4 +79,11 @@ code {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+.who-wrapper {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
