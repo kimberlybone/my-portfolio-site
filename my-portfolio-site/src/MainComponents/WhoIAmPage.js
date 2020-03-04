@@ -7,6 +7,7 @@ import { Container } from 'react-bootstrap'
 import { useSpring, animated } from 'react-spring'
 import { Spring } from 'react-spring/renderprops'
 import { TweenMax } from 'gsap'
+import kim2 from '../Assets/kim2.jpeg'
 
 
 
@@ -20,6 +21,9 @@ function WhoIAmPage( props ){
   return(
     <div ref={ elem => page = elem }>
       <Hero title={ props.title } subTitle={ props.subTitle } subText={ props.subText }></Hero>
+      <div className="k-card-profile" onClick={( e => props.onClick(props.item) )}>
+        <img className="k-card-profile-img" src={ kim2 } alt="image"/>
+      </div>
       <Content>
             <div>
               <TitlesForWhat></TitlesForWhat>

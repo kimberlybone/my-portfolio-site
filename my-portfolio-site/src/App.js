@@ -22,7 +22,7 @@ class App extends React.Component {
       welcome: {
         title: "Welcome",
         subTitle: "I am a web developer who loves design, traveling, and best of all coffee",
-        subText: "Checkout my projects"
+        subText: "Checkout my projects below!"
       },
       what: {
         title: "What I Do",
