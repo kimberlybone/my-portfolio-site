@@ -24,7 +24,7 @@ function Hero( props ){
                 transitions.map( ({ item, props, key }) => <animated.div key={key} style={props}>{item.text}</animated.div>)
               }
               { props.title && <animated.h1 className="display-1 font-weight-bold"
-                                            style={ colorChange }
+                                            style={{ color: '#f1c40f', border: 'white', borderRadius: '7px' }}
                                             onMouseLeave={ () => setToggle(!isToggled) }> { props.title } </animated.h1> }
               { props.subTitle && <h3 className="display-4 font-weight-light"> { props.subTitle } </h3> }
               { props.subText && <h3 className="lead font-weight-light"> { props.subText } </h3> }

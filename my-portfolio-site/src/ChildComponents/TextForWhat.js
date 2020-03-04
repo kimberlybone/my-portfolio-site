@@ -25,7 +25,7 @@ class TextForWhat extends React.Component {
         { props => (
           <div style={ props }>
             <div style={ otherInfoStyle }>
-              <h3> Fun Facts: </h3>
+              <h2> <u>Fun Facts:</u> </h2>
               <li> I speak Spanish</li>
               <li> I studied and volunteered abroad in Costa Rica</li>
               <li> I'm always eager to learn new things </li>

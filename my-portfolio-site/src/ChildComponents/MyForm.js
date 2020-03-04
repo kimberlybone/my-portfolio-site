@@ -42,7 +42,7 @@ class MyForm extends React.Component {
             emailSent: false
           })
         }
-      }) 
+      })
       .catch( err => {
         this.setState({
           disabled: false,
@@ -61,7 +61,8 @@ class MyForm extends React.Component {
                         name="name"
                         type="text"
                         value={ this.state.name }
-                        onChange={ this.handleChange }></Form.Control>
+                        onChange={ this.handleChange }
+                        x-webkit-speech></Form.Control>
         </Form.Group>
 
         <Form.Group>
