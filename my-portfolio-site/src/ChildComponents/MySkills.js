@@ -15,24 +15,19 @@ function MySkills( props ){
         opacity: 1,
         y: -20,
         ease: Power3.easeOut,
-        delay: 0.7
+        delay: 1.9
       }
     )
   })
 
   return(
     <div>
-      <Container className='h3-what' ref={ elem => { mySkills = elem } }>
+      <Container className='left-what' ref={ elem => { mySkills = elem } }>
         <h3>Tools & Skills</h3>
-        <p>HTML</p>
-        <p>CSS</p>
-        <p>ReactJS</p>
-        <p>JavaScript</p>
-        <p>Ruby on Rails</p>
         <p>Object Oriented Programming</p>
-        <p>IBM Watson Knowledge Studio & Natural Language Proceessing</p>
-        <p>React Hooks</p>
-        <p>Python</p>
+        <p>Customer Service</p>
+        <p>Leadership</p>
+        <p>Team Building</p>
       </Container>
     </div>
   )

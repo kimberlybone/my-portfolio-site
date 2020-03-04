@@ -16,14 +16,14 @@ function MyMedia( props ){
         opacity: 1,
         y: -20,
         ease: Power3.easeOut,
-        delay: 0.3
+        delay: 1.3
       }
     )
   })
 
   return(
     <div>
-      <Container className='h3-what' ref={ elem => { myMedia = elem } }>
+      <Container className='left-what' ref={ elem => { myMedia = elem } }>
         <h3>Media</h3>
         <p><a href="https://medium.com/datadriveninvestor/nutrition-meets-artificial-intelligence-b15847d6cc19?source=friends_link&sk=4f62c29ebede52b76b42547149f0ccc4">Nutrition Meets Artificial Intelligence Part 1</a></p>
         <p><a href="https://medium.com/@k_bone/nutrition-meets-artificial-intelligence-part-ii-b45f4a000db6?source=friends_link&sk=797b3b6ef097babe8dc31dd4b6897039">Nutrition Meets Artificial Intelligence Part 2</a></p>
