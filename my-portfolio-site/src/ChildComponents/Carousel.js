@@ -28,7 +28,7 @@ class Carousel extends React.Component {
           id: 2,
           title: "Health On the Go",
           subTitle: "",
-          imgSrc: "https://www.freemanhealth.com/assets/images/heart-steth2.jpg",
+          imgSrc: "https://sneakers4funds.com/wp-content/uploads/2019/10/healthy-food-1024x1024.jpg",
           link: "https://github.com/kimberlybone/Health-on-the-go",
           selected: false
         }
