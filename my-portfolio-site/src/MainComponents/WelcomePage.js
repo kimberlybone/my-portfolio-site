@@ -13,7 +13,7 @@ function WelcomePage( props ){
   })
 
   return(
-    <div ref={ elem => page = elem }>
+    <div className="welcome-page" ref={ elem => page = elem }>
       <Hero title={ props.title } subTitle={ props.subTitle } subText={ props.subText }></Hero>
       <Carousel></Carousel>
     </div>

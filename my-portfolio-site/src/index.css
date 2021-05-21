@@ -84,9 +84,28 @@ code {
   font-color: red;
   padding: 10px 15px;
 }
+.welcome-page::before{
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://cutewallpaper.org/21/white-background-gif/Dribbble-hexgif-by-Tim-Hykes.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.1;
+  z-index: -1;
+  position: absolute;
+}
+.welcome-page{
+  z-index: 1;
+  position: relative;
+}
 
 .who-page {
-  background-image: url('./Assets/kim7.jpeg');
+  background-image: url('https://www.xmple.com/wallpaper/white-linear-highlight-yellow-gradient-1920x1080-c2-ffd700-ffffff-l-33-a-315-f-21.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

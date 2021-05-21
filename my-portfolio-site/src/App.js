@@ -21,7 +21,7 @@ class App extends React.Component {
       ],
       welcome: {
         title: "Welcome",
-        subTitle: "I am a web developer who loves design, traveling, and best of all coffee",
+        subTitle: "I am a Full-Stack Software Developer with a passion for building digital products to improve our everyday lives",
         subText: "Checkout my projects below!"
       },
       who: {
@@ -29,7 +29,7 @@ class App extends React.Component {
       },
       what: {
         title: "What I Do",
-        subTitle: "Skills and more...",
+        subTitle: "Skills and more!",
         subText: "Checkout my projects"
       },
       contact: {
