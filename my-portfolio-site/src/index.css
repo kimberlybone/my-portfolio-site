@@ -12,8 +12,35 @@ code {
     monospace;
 }
 
+.nav-link{
+  font-family: 'Courier'
+}
+
+.navbar-brand{
+  font-family: 'Courier'
+}
+
 .hero {
-  font-family: 'Petit Formal Script', cursive;
+  font-family: 'Courier New';
+}
+
+.blinking-cursor {
+  background: black;
+  margin-left: 3px;
+  border-top: 10px;
+  animation: blink 1.1s infinite;
+  width: 8px;
+  height: 78px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+@keyframes blink {
+  from { opacity: 1; }
+  to { opacity: 0; }
+  /* 0% {background: #222}
+  50% {background: lime}
+  100% {background: #222} */
 }
 
 /* .k-card img {
@@ -53,7 +80,7 @@ code {
 
 .k-card-image {
   border-radius: 10px;
-  width: 360px;
+  width: 330px;
   height: 480px;
   box-shadow: 0px 0px 3px 1px #ccc;
   transition: box-shadow 0.5s;
@@ -98,8 +125,29 @@ code {
   opacity: 0.1;
   z-index: -1;
   position: absolute;
+  padding-bottom: 100px;
 }
 .welcome-page{
+  z-index: 1;
+  position: relative;
+}
+.what-page::before{
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://cutewallpaper.org/21/white-background-gif/Dribbble-hexgif-by-Tim-Hykes.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.1;
+  z-index: -1;
+  position: absolute;
+  padding-bottom: 100px;
+}
+.what-page{
   z-index: 1;
   position: relative;
 }

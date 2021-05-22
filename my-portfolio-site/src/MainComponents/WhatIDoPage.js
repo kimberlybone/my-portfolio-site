@@ -7,6 +7,7 @@ import MyLanguages from '../ChildComponents/MyLanguages'
 import MyCommunityInvolvement from '../ChildComponents/MyCommunityInvolvement'
 import { Container } from 'react-bootstrap'
 import { TweenMax, Power3 } from 'gsap'
+import Carousel from '../ChildComponents/Carousel'
 
 
 function WhatIDoPage( props ){
@@ -24,18 +25,22 @@ function WhatIDoPage( props ){
   })
 
   return(
-    <div ref={ elem => page = elem }>
+    <div className="what-page" ref={ elem => page = elem }>
       <Hero title={ props.title } subTitle={ props.subTitle } subText={ props.subText }></Hero>
       <Container className='h3-what' ref={ elem => { whatIDo = elem } }>
+        <h3>Projects</h3>
+        <Carousel></Carousel>
+        <hr></hr>
+        <br></br>
         <MyLanguages></MyLanguages>
         <hr></hr>
+        <br></br>
+        <br></br>
         <MyTools></MyTools>
         <hr></hr>
+        <br></br>
+        <br></br>
         <MyMedia></MyMedia>
-        <hr></hr>
-        <MyCommunityInvolvement></MyCommunityInvolvement>
-        <hr></hr>
-        <MySkills></MySkills>
       </Container>
     </div>
   )

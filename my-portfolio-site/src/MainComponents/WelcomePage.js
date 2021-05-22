@@ -15,7 +15,7 @@ function WelcomePage( props ){
   return(
     <div className="welcome-page" ref={ elem => page = elem }>
       <Hero title={ props.title } subTitle={ props.subTitle } subText={ props.subText }></Hero>
-      <Carousel></Carousel>
+      <br></br>
     </div>
   )
 }

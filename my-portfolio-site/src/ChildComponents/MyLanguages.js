@@ -26,7 +26,7 @@ function MyLanguages( props ){
         <h3>Languages</h3>
         <p>HTML</p>
         <p>JavaScript</p>
-        <p>Ruby on Rails</p>
+        <p>Ruby</p>
         <p>Python</p>
       </Container>
     </div>

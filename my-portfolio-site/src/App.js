@@ -20,20 +20,20 @@ class App extends React.Component {
         { title: "Contact Me", path: "/contact" }
       ],
       welcome: {
-        title: "Welcome",
-        subTitle: "I am a Full-Stack Software Developer with a passion for building digital products to improve our everyday lives",
-        subText: "Checkout my projects below!"
+        title: "Welcome()",
+        subTitle: "I am a Full-Stack Developer with a passion for building digital products that improve people's everyday lives",
+        subText: ""
       },
       who: {
-        title: "Who Am I?"
+        title: `Who_Am_I()`
       },
       what: {
-        title: "What I Do",
-        subTitle: "Skills and more!",
-        subText: "Checkout my projects"
+        title: "What_I_Do()",
+        subTitle: "Checkout my projects && more about me",
+        subText: ""
       },
       contact: {
-        title: "Let's Connect"
+        title: "Connect_With_Me()"
       }
     }
 
@@ -42,7 +42,7 @@ class App extends React.Component {
     return(
       <Router>
         <Container className="p-0" fluid={ true } >
-          <Navbar className="border-bottom" variant="light" expand="lg">
+          <Navbar variant="light" expand="lg">
 
             <Navbar.Brand> Kimberly Bone </Navbar.Brand>
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle"/>
