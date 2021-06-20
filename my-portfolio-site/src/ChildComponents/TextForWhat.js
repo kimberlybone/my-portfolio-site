@@ -6,7 +6,7 @@ class TextForWhat extends React.Component {
 
     const otherInfoStyle = {
       color: '#080808',
-      padding: '100px 0',
+      padding: '100px 100px',
       textShadow: '0.5px 0.5px 1px #f1c40f',
       marginBottom: '400px',
       width: '100%',
@@ -24,10 +24,9 @@ class TextForWhat extends React.Component {
         { props => (
           <div style={ props }>
             <div style={ otherInfoStyle }>
-              <h2> <u>Fun Facts:</u> </h2>
-              <li> I speak Spanish</li>
-              <li> I studied and volunteered abroad in Costa Rica</li>
-              <li> I'm always eager to learn new things </li>
+              <h2> <u>A little about me:</u> </h2>
+              <li> I graduated with a major in Spanish Language and Literature which led me to study and volunteer abroad in Costa Rica.</li>
+              <li> I am an explorer with a strong curiosity about the world. </li>
             </div>
           </div>
         )}

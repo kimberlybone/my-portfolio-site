@@ -23,16 +23,14 @@ function WhoIAmPage( props ){
     <div className="who-page" ref={ elem => thisPage = elem }>
       {/* <div className="who-main-div"> */}
           <Hero title={ props.title } subTitle={ props.subTitle } subText={ props.subText }></Hero>
-          {/* <Content> */}
-          {/* </Content> */}
           <div className="who-wrapper">
             <TitlesForWhat></TitlesForWhat>
           </div>
           <div className="who-wrapper">
             <TextForWhat></TextForWhat>
           </div>
-          <p style={{ color: '#080808', fontSize: '30px' }}> *Take a look at my resume! <a href="public/SoftwareResume_copy.pdf" style={{ backgroundColor: 'white', borderRadius: '5px' }}download> Download Kimberly's Resume </a></p><br></br>
-          {/* </Content> */}
+          <iframe src="public/SoftwareResume_copy.pdf" style={{borderRadius: '10px', height: '500px', width: '100%', }}></iframe>
+          <br></br>
       {/* </div> */}
     </div>
   )
