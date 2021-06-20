@@ -122,7 +122,7 @@ code {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  opacity: 0.1;
+  opacity: 0.3;
   z-index: -1;
   position: absolute;
   padding-bottom: 100px;
@@ -142,7 +142,7 @@ code {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  opacity: 0.1;
+  opacity: 0.3;
   z-index: -1;
   position: absolute;
   padding-bottom: 100px;
@@ -152,18 +152,51 @@ code {
   position: relative;
 }
 
-.who-page {
+.who-page::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://cutewallpaper.org/21/white-background-gif/Dribbble-hexgif-by-Tim-Hykes.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.3;
+  z-index: -1;
+  position: absolute;
+}
+
+.who-page{
+  z-index: 1;
+  position: relative;
+}
+
+.who-wrapper::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url('https://www.xmple.com/wallpaper/white-linear-highlight-yellow-gradient-1920x1080-c2-ffd700-ffffff-l-33-a-315-f-21.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  opacity: 0.8;
+  position: absolute;
+  /* text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); */
+  z-index: -1;
 }
 .who-wrapper {
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
+  z-index: 1;
+  position: relative;
   text-align: center;
+  font-family: 'Courier New';
+  font-size: larger;
+  font-weight: 600;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 

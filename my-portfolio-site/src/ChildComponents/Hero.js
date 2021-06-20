@@ -28,7 +28,7 @@ function Hero( props ){
                                             onMouseLeave={ () => setToggle(!isToggled) }> { props.title } </animated.h1> }
               { <h1 className="blinking-cursor"></h1> }
               { <p></p> }
-              { props.subTitle && <h3 className="display-5 font-weight-light"
+              { props.subTitle && <h3 className="display-5 font-weight-bold"
                                       style={{ color: '#f1c40f', fontFamily: "Courier New"}}> { props.subTitle } </h3> }
               { props.subText && <h3 className="lead font-weight-light"> { props.subText } </h3> }
             </Col>

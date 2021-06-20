@@ -5,11 +5,10 @@ class TextForWhat extends React.Component {
   render() {
 
     const otherInfoStyle = {
-      background: 'white',
-      color: '#f1c40f',
-      padding: '1.5rem',
+      color: '#080808',
+      padding: '100px 0',
       textShadow: '0.5px 0.5px 1px #f1c40f',
-      marginBottom: '600px',
+      marginBottom: '400px',
       width: '100%',
       height: '400px',
       bottom: '-300px',

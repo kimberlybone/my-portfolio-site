@@ -12,10 +12,10 @@ import Carousel from '../ChildComponents/Carousel'
 
 function WhatIDoPage( props ){
 
-  let whatIDo = useRef( null )
+  let thisPage = useRef( null )
 
   useEffect(() => {
-    TweenMax.to( whatIDo, 0.8, { opacity: 1 } )
+    TweenMax.to( thisPage, 0.8, { opacity: 1 } )
   })
 
   let page = useRef( null )
@@ -27,7 +27,7 @@ function WhatIDoPage( props ){
   return(
     <div className="what-page" ref={ elem => page = elem }>
       <Hero title={ props.title } subTitle={ props.subTitle } subText={ props.subText }></Hero>
-      <Container className='h3-what' ref={ elem => { whatIDo = elem } }>
+      <Container className='h3-what' ref={ elem => { thisPage = elem } }>
         <h3>Projects</h3>
         <Carousel></Carousel>
         <hr></hr>

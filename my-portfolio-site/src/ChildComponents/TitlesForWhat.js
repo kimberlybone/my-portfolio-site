@@ -4,11 +4,8 @@ import { Spring } from 'react-spring/renderprops'
 function TitlesForWhat(){
 
   const infoStyle = {
-    background: 'white',
-    color: '#f1c40f',
-    padding: '1.5rem',
+    padding: '100px 0',
     textShadow: '0.5px 0.5px 1px #f1c40f',
-    marginTop: '400px',
     marginBottom: '500px',
     height: '600px',
     minHeight: '600px',
@@ -37,7 +34,6 @@ function TitlesForWhat(){
               <li>  Cooking </li>
               <li>  Traveling </li>
               <li>  Photography </li>
-              <li>  Inspiring other women of color </li>
           </div>
         </div>
       )}
