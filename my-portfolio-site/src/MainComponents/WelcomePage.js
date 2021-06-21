@@ -14,7 +14,8 @@ function WelcomePage( props ){
 
   return(
     <div className="welcome-page" ref={ elem => page = elem }>
-      <Hero title={ props.title } subTitle={ props.subTitle } subText={ props.subText }></Hero>
+      <Hero title={ props.title } subTitle={ props.subTitle } subText={ props.subText }>
+      </Hero>
       <br></br>
     </div>
   )

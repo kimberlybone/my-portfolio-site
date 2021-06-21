@@ -30,7 +30,8 @@ function Hero( props ){
               { <p></p> }
               { props.subTitle && <h3 className="display-5 font-weight-bold"
                                       style={{ color: '#f1c40f', fontFamily: "Courier New"}}> { props.subTitle } </h3> }
-              { props.subText && <h3 className="lead font-weight-light"> { props.subText } </h3> }
+              { props.subText && <h3 className="lead font-weight-light"
+                                      style={{ fontStyle: "italic", borderStyle: "solid", textAlign: "center" }}> { props.subText } </h3> }
             </Col>
           </Row>
         </animated.div>
