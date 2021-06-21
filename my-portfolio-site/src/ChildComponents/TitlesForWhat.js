@@ -17,7 +17,7 @@ function TitlesForWhat(){
     <Spring
       from={{ opacity: 0, marginLeft: -500 }}
       to={{ opacity: 1, marginLeft: 0 }}
-      config={{ delay: 500, duration: 1000 }}
+      config={{ delay: 500, duration: 500 }}
 
     >
       { props => (

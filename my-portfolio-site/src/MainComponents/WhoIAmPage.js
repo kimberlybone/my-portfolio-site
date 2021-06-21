@@ -7,7 +7,6 @@ import { Container } from 'react-bootstrap'
 import { useSpring, animated } from 'react-spring'
 import { Spring } from 'react-spring/renderprops'
 import { TweenMax } from 'gsap'
-import kim2 from '../Assets/kim2.jpeg'
 
 
 
@@ -29,7 +28,6 @@ function WhoIAmPage( props ){
           <div className="who-wrapper">
             <TextForWhat></TextForWhat>
           </div>
-          <iframe src="public/SoftwareResume_copy.pdf" style={{borderRadius: '10px', height: '500px', width: '100%', }}></iframe>
           <br></br>
       {/* </div> */}
     </div>
